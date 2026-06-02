@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoilDex 계정 및 데이터 삭제 요청</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      max-width: 720px; margin: 0 auto; padding: 32px 20px 64px;
+      line-height: 1.7; color: #1a1a2e; background: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e8e8f0; background: #0d0d1a; }
+      .card { background: #16162a !important; border-color: #2a2a44 !important; }
+      code { background: #2a2a44 !important; }
+      a { color: #8ab4ff !important; }
+    }
+    h1 { font-size: 24px; margin-bottom: 4px; }
+    h2 { font-size: 18px; margin-top: 32px; }
+    .sub { color: #888; font-size: 14px; margin-top: 0; }
+    .card {
+      border: 1px solid #e5e5ef; border-radius: 12px;
+      padding: 16px 20px; margin: 16px 0; background: #fafaff;
+    }
+    code {
+      background: #f0f0f7; padding: 2px 6px; border-radius: 6px;
+      font-size: 14px;
+    }
+    ul { padding-left: 20px; }
+    li { margin: 6px 0; }
+    .muted { color: #888; font-size: 13px; }
+    a { color: #3b5bdb; }
+  </style>
+</head>
+<body>
+  <h1>계정 및 데이터 삭제 요청</h1>
+  <p class="sub">FoilDex — 카드 컬렉션 관리 앱</p>
+
+  <p>
+    FoilDex는 기본적으로 모든 데이터를 <strong>사용자 기기에 로컬로</strong> 저장합니다.
+    구글 로그인은 <strong>선택 사항</strong>이며, 로그인한 경우에만 클라우드 백업/복원을
+    위해 일부 데이터가 클라우드(Google Firebase)에 저장됩니다.
+    아래 방법으로 계정과 데이터를 삭제할 수 있습니다.
+  </p>
+
+  <h2>1. 앱에서 직접 삭제 (권장)</h2>
+  <div class="card">
+    <strong>클라우드 데이터 + 계정 삭제</strong>
+    <ul>
+      <li>FoilDex 앱 실행 → <code>설정</code> → <code>클라우드</code> →
+        <code>계정·데이터 삭제</code></li>
+      <li>클라우드에 저장된 모든 카드·이미지와 구글 계정 연결이 영구 삭제됩니다.</li>
+    </ul>
+    <strong>기기 로컬 데이터 삭제</strong>
+    <ul>
+      <li><code>설정</code> → <code>데이터 초기화</code> 를 사용하거나, 앱을 삭제(제거)하면
+        기기에 저장된 모든 로컬 데이터가 제거됩니다.</li>
+    </ul>
+  </div>
+
+  <h2>2. 이메일로 삭제 요청 (앱을 사용할 수 없는 경우)</h2>
+  <div class="card">
+    <p>아래 이메일로 가입에 사용한 구글 계정 주소와 함께 삭제를 요청해 주세요.
+      확인 후 처리해 드립니다.</p>
+    <p>📧 <a href="mailto:chl6034@gmail.com?subject=[FoilDex]%20계정·데이터%20삭제%20요청">
+      chl6034@gmail.com</a></p>
+    <p class="muted">제목 예: <em>[FoilDex] 계정·데이터 삭제 요청</em></p>
+  </div>
+
+  <h2>삭제되는 데이터</h2>
+  <ul>
+    <li>클라우드에 백업된 카드 데이터 및 카드 이미지 (Firebase Firestore / Storage)</li>
+    <li>구글 로그인으로 생성된 계정 및 인증 정보 (Firebase Authentication)</li>
+    <li>닉네임 등 클라우드 프로필 정보</li>
+    <li>기기 로컬 데이터(앱 삭제 또는 데이터 초기화 시): 카드·팩·설정·프로필</li>
+  </ul>
+
+  <h2>보관 정보</h2>
+  <p>
+    삭제 요청이 처리되면 위 데이터는 <strong>즉시 영구 삭제</strong>되며 복구할 수 없습니다.
+    별도로 보관되는 백업본은 없습니다. (법령상 보관 의무가 있는 항목은 해당 기간 동안만
+    분리 보관 후 파기됩니다.)
+  </p>
+
+  <p class="muted" style="margin-top:40px">
+    문의: <a href="mailto:chl6034@gmail.com">chl6034@gmail.com</a> ·
+    개인정보처리방침: <a href="https://chl6034.github.io/FoilDex-privacy/">바로가기</a>
+  </p>
+</body>
+</html>
